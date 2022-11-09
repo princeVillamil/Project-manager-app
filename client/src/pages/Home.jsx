@@ -40,43 +40,42 @@ export default function Home() {
       <div className="mt-5 container flex gap-2 flex-col mx-auto md:flex-row">
         {/* Project Side */}
         <div className='w-3/4 h-fit overflow-hidden overflow-x-auto rounded shadow-lg'>
-          <table className="min-w-full divide-y divide-gray-200 font-semibold text-md">
-            <thead className="bg-gray-700 font-bold text-lg">
-              <tr>
-                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-white" >
-                    Project
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-white" >
-                    Team
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-white" >
-                    Repository
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-white" >
-                  Status
-                </th>
-                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-white" >
-                  Deadline
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-200">
-              {
-                placeHolderProjects.map(x=>{
-                  return <Project key={x.projectID}/>
-                })
-              }
-              
-            </tbody>
-          </table>
+          
         </div>
         {/* All Task side */}
         <div className='h-fit w-1/4 overflow-hidden overflow-x-auto rounded shadow-lg max-w-xl px-5 pt-0 pb-2 mx-auto dark:bg-gray-800 dark:text-gray-100'>
-          <h6 className='bg-gray-700 max-w-fit text-white rounded mb-4 px-7 text-lg font-medium py-1 my-1 space-x-2 shadow'>Task</h6>
-          <ul className="space-y-5">
-            <HomeToDo/>
-            <HomeToDo/>
-          </ul>
+          <div class="flex justify-between py-1">
+              <h3 class="text-lg font-semibold">Task</h3>
+              <svg class="h-4 fill-current text-green-600 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 10a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4zm7 0a1.999 1.999 0 1 0 0 4 1.999 1.999 0 1 0 0-4z"/></svg>
+          </div>
+          <div class="text-sm mt-2">
+              <HomeToDo/>
+              <div class="shadow bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
+                  Check the responsive layout on all devices
+                  <div class="text-grey-darker mt-2 ml-2 flex justify-between items-start">
+
+                  </div>
+              </div>
+              {/* <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
+                  Do a mobile first layout
+              </div>
+              
+              <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
+                  Check the meta tags
+              </div>
+              
+              <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
+                  Check the responsive layout on all devices
+                  <div class="text-grey-darker mt-2 ml-2 flex justify-between items-start">
+                      <span class="text-xs flex items-center">
+                          <svg class="h-4 fill-current mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path d="M11 4c-3.855 0-7 3.145-7 7v28c0 3.855 3.145 7 7 7h28c3.855 0 7-3.145 7-7V11c0-3.855-3.145-7-7-7zm0 2h28c2.773 0 5 2.227 5 5v28c0 2.773-2.227 5-5 5H11c-2.773 0-5-2.227-5-5V11c0-2.773 2.227-5 5-5zm25.234 9.832l-13.32 15.723-8.133-7.586-1.363 1.465 9.664 9.015 14.684-17.324z"/></svg>
+                          3/5
+                      </span>
+                      <img src="https://i.imgur.com/OZaT7jl.png" class="rounded-full" />
+                  </div>
+              </div> */}
+              <p class="mt-3 text-grey-dark">Add a card...</p>
+          </div>
         </div>
       </div>
 
