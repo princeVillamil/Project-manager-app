@@ -39,7 +39,8 @@ export default function Home() {
       <Header/>
       <div className="mt-5 container flex gap-2 flex-col mx-auto md:flex-row">
         {/* Project Side */}
-        <div className='w-3/4 h-fit overflow-hidden overflow-x-auto rounded shadow-lg'>
+        <div className='w-3/4 h-fit overflow-hidden overflow-x-auto rounded px-5'>
+          <h3 class="text-lg font-semibold">YOUR PROJECTS</h3>
           
         </div>
         {/* All Task side */}
@@ -50,11 +51,19 @@ export default function Home() {
           </div>
           <div class="text-sm mt-2">
               <HomeToDo/>
-              <div class="shadow bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
-                  Check the responsive layout on all devices
-                  <div class="text-grey-darker mt-2 ml-2 flex justify-between items-start">
-
-                  </div>
+              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey cursor-pointer hover:bg-grey-lighter">
+                <a rel="noopener noreferrer" href="#" className="inline-flex max-w-max bg-rose-200 items-center px-2 py-1 my-1 space-x-2 text-sm border rounded group dark:border-gray-700">
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-rose-500"></span>
+                  <span className="group-hover:underline text-rose-500 font-semibold">Late</span>
+                </a>
+                Do a mobile first layout
+              </div>
+              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey cursor-pointer hover:bg-grey-lighter">
+                <a rel="noopener noreferrer" href="#" className="inline-flex max-w-max bg-green-200 items-center px-2 py-1 my-1 space-x-2 text-sm border rounded group dark:border-gray-700">
+                  <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                  <span className="group-hover:underline text-green-500 font-semibold">Early</span>
+                </a>
+                Do a mobile first layout
               </div>
               {/* <div class="bg-white p-2 rounded mt-1 border-b border-grey cursor-pointer hover:bg-grey-lighter">
                   Do a mobile first layout
@@ -74,7 +83,7 @@ export default function Home() {
                       <img src="https://i.imgur.com/OZaT7jl.png" class="rounded-full" />
                   </div>
               </div> */}
-              <p class="mt-3 text-grey-dark">Add a card...</p>
+              {/* <p class="mt-3 text-grey-dark">Add a card...</p> */}
           </div>
         </div>
       </div>
