@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function HomeToDo() {
   return (
-		<div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey cursor-pointer hover:bg-grey-lighter">
+		<div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey hover:bg-grey-lighter">
 			<a rel="noopener noreferrer" href="#" className="inline-flex max-w-max bg-purple-200 items-center px-2 py-1 my-1 space-x-2 text-sm border rounded group dark:border-gray-700">
 				<span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-purple-500"></span>
-				<span className="group-hover:underline text-purple-500 font-semibold">Current</span>
+				<span className="group-hover:underline text-purple-500 font-semibold">On time</span>
 			</a>
 			Do a mobile first layout
 		</div>

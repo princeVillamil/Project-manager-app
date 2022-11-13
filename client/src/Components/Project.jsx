@@ -2,36 +2,17 @@ import React from 'react'
 
 export default function Project() {
   return (
-    <tr>
-      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-        ProjectOne
-      </td>
-      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-      <div className="flex flex-col justify-center">
-        <div className="flex -space-x-4">
-          <img alt="" className="w-12 h-12 border rounded-full dark:bg-gray-500 border-white" src="https://images.unsplash.com/photo-1606825004533-dbfb13be4cb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9ydHJhaXQ_NHx8fHx8fDE2Njc4MDMyNjY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40" />
-          <img alt="" className="w-12 h-12 border rounded-full dark:bg-gray-500 border-white" src="https://images.unsplash.com/photo-1606825004533-dbfb13be4cb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9ydHJhaXQ_NHx8fHx8fDE2Njc4MDMyNjY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40" />
-          <img alt="" className="w-12 h-12 border rounded-full dark:bg-gray-500 border-white" src="https://images.unsplash.com/photo-1606825004533-dbfb13be4cb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9ydHJhaXQ_NHx8fHx8fDE2Njc4MDMyNjY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40" />
-          <img alt="" className="w-12 h-12 border rounded-full dark:bg-gray-500 border-white" src="https://images.unsplash.com/photo-1606825004533-dbfb13be4cb5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=40&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9ydHJhaXQ_NHx8fHx8fDE2Njc4MDMyNjY&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=40" />
-          <span className="flex items-center justify-center w-12 h-12 font-semibold rounded-full bg-white dark:bg-gray-900 text-indigo-600 border border-indigo-600">+3</span>
+    <a href='/project/id' class="rounded overflow-hidden shadow-lg min-h-[100px] min-w-[150px] w-[23.5%] max-w-[23.5%] bg-center bg-[url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp')] bg-cover">
+      {/* <img class="w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="Mountain"/> */}
+      <div className="bg-[rgba(0,0,0,0)] transition duration-75 hover:bg-[rgba(0,0,0,.2)] h-full w-full p-1">
+        <div className="inline-flex max-w-max bg-rose-200 items-center px-2 py-1 space-x-2 text-xs rounded">
+          <span aria-hidden="true" className="h-1 w-1 rounded-full bg-rose-500"></span>
+          <span className="group-hover:underline text-rose-500 font-normal">Late</span>
         </div>
+        <h1 class="font-bold text-xl mt-2 text-white">Project Name</h1>
+
       </div>
-      </td>
-      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-        <a className="hover:text-indigo-600" target="_blank" href="https://github.com/princeVillamil/anime-tracker-heroku">TeamRepo</a>
-      </td>
-      <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-        <strong className="rounded bg-green-500 px-3 py-1.5 text-xs text-white" >
-          Early
-        </strong>
-      </td>
-      <td className="whitespace-nowrap px-4 py-2">
-        <div className="flex flex-col text-gray-700">
-          <span>30th September 2022</span>
-          <span>In 11 days</span>
-        </div>
-      </td>
-    </tr>
+    </a>
   )
 }
 

@@ -40,8 +40,31 @@ export default function Home() {
       <div className="mt-5 container flex gap-2 flex-col mx-auto md:flex-row">
         {/* Project Side */}
         <div className='w-3/4 h-fit overflow-hidden overflow-x-auto rounded px-5'>
-          <h3 class="text-lg font-semibold">YOUR PROJECTS</h3>
-          
+          <h3 class="text-lg font-semibold py-1">YOUR PROJECTS</h3>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <Project/>
+            <a href='#' class="rounded overflow-hidden shadow-lg min-h-[100px] min-w-[150px] w-[23.5%] max-w-[23.5%] bg-center bg-[url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp')] bg-cover">
+              {/* <img class="w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="Mountain"/> */}
+              <div className="bg-[rgba(0,0,0,0)] transition duration-75 hover:bg-[rgba(0,0,0,.2)] h-full w-full p-1">
+                <div className="inline-flex max-w-max bg-green-200 items-center px-2 py-1 space-x-2 text-xs rounded">
+                  <span aria-hidden="true" className="h-1 w-1 rounded-full bg-green-500"></span>
+                  <span className="group-hover:underline text-green-500 font-normal">Early</span>
+                </div>
+                <h1 class="font-bold text-xl mt-2 text-white">Super long</h1>
+              </div>
+            </a>
+            <a href='#' class="rounded overflow-hidden shadow-lg min-h-[100px] min-w-[150px] w-[23.5%] max-w-[23.5%] bg-center bg-[url('https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp')] bg-cover">
+              {/* <img class="w-full" src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" alt="Mountain"/> */}
+              <div className="bg-[rgba(0,0,0,0)] transition duration-75 hover:bg-[rgba(0,0,0,.2)] h-full w-full p-1">
+                <div className="inline-flex max-w-max bg-purple-200 items-center px-2 py-1 space-x-2 text-xs rounded">
+                  <span aria-hidden="true" className="h-1 w-1 rounded-full bg-purple-500"></span>
+                  <span className="group-hover:underline text-purple-500 font-normal">On time</span>
+                </div>
+                <h1 class="font-bold text-xl mt-2 text-white">Project Name</h1>
+              </div>
+            </a>
+            <Project/>
+          </div>
         </div>
         {/* All Task side */}
         <div className='h-fit w-1/4 overflow-hidden overflow-x-auto rounded shadow-lg max-w-xl px-5 pt-0 pb-2 mx-auto dark:bg-gray-800 dark:text-gray-100'>
@@ -51,14 +74,14 @@ export default function Home() {
           </div>
           <div class="text-sm mt-2">
               <HomeToDo/>
-              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey cursor-pointer hover:bg-grey-lighter">
+              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey hover:bg-grey-lighter">
                 <a rel="noopener noreferrer" href="#" className="inline-flex max-w-max bg-rose-200 items-center px-2 py-1 my-1 space-x-2 text-sm border rounded group dark:border-gray-700">
                   <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-rose-500"></span>
                   <span className="group-hover:underline text-rose-500 font-semibold">Late</span>
                 </a>
                 Do a mobile first layout
               </div>
-              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey cursor-pointer hover:bg-grey-lighter">
+              <div class="shadow bg-white p-2 rounded mt-1 border-b flex flex-col border-grey hover:bg-grey-lighter">
                 <a rel="noopener noreferrer" href="#" className="inline-flex max-w-max bg-green-200 items-center px-2 py-1 my-1 space-x-2 text-sm border rounded group dark:border-gray-700">
                   <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-green-500"></span>
                   <span className="group-hover:underline text-green-500 font-semibold">Early</span>
